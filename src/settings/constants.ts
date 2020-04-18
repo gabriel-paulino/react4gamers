@@ -7,3 +7,11 @@ export const DEMON_TILE_SIZE = 2 * TILE_SIZE;
 export const HERO_HELMET_OFFSET = 12;
 
 export const HEAD_OFFSET = 12;
+
+
+export enum EDirection {
+    LEFT = "ArrowLeft",
+    RIGHT = "ArrowRight",
+    UP = "ArrowUp",
+    DOWN = "ArrowDown",
+}
