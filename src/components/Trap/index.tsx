@@ -8,7 +8,7 @@ const Trap = () => {
     <div
       style={{
         position: 'absolute',
-        bottom: TILE_SIZE * 6,
+        top: TILE_SIZE * 6,
         left: TILE_SIZE * 1,
         width: TILE_SIZE,
         height: 100,
