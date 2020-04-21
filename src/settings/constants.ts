@@ -13,3 +13,8 @@ export enum EDirection {
     UP = "ArrowUp",
     DOWN = "ArrowDown",
 }
+
+export enum Ewalker {
+    HERO = "hero",
+    ENEMY = "enemy",
+}
