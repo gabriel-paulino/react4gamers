@@ -6,26 +6,19 @@ import { TILE_SIZE, HEAD_OFFSET, EDirection } from '../../settings/constants';
 import './index.css';
 
 
-const initialPosition = {
-  x: 2,
-  y: 3
-};
+interface IProps {
+  initialPosition: { x: number, y: number }
+}
 
-const Hero = () => {
+const Hero = (props: IProps) => {
   //Desestruturação : destructuring
-  const { position, direction } = useHeroMoviment(initialPosition);
-
-  /*
-    setTimeout(() => {
-      const newPosition = { x: 14, y: 15 };
-      updatePositionState(newPosition);
-    }, 2000)*/
+  const { position, direction } = useHeroMoviment(props.initialPosition);
 
   return (
     <div
       style={{
         position: 'absolute',
-        top: TILE_SIZE * position.y,
+        top: TILE_SIZE * position.y - HEAD_OFFSET,
         left: TILE_SIZE * position.x,
         width: TILE_SIZE,
         height: TILE_SIZE + HEAD_OFFSET,
